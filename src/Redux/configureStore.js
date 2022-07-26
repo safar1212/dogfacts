@@ -1,8 +1,9 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// // import { missionInfo } from './missions/missions';
+import { configureStore } from '@reduxjs/toolkit';
+import { dogsInfo } from './mainPage';
 
 
-// const store = configureStore({
-// //   reducer: { rocket: rocketInfo.reducer, mission: missionInfo.reducer },
-// });
-// export default store;
+
+const store = configureStore({
+  reducer: { dog: dogsInfo.reducer}
+});
+export default store;

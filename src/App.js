@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 // import { useDispatch } from 'react-redux';
 import HomePage from './Components/HomePage';
-// import TestPage from './Components/TestPage';
 import NavBar from './Components/navbar';
 
 function App() {

@@ -15,7 +15,7 @@ nav {
   color: white;
   font-size: 22px;
   height: 6rem;
-  background-color: #0290ff;
+  background-color: #0068b8;
 }
 
 nav ul {
@@ -45,6 +45,89 @@ nav .voice-setting-div {
 }
 
 
+.main-section {
+  display: flex;
+  background-color: #0183e6;
+}
+
+.main-section img {
+  height: 500px;
+  padding: 70px;
+  width: 50%;
+  color: #0183e6;
+}
+
+.main-section .main-count {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  font-size: 40px;
+}
+
+.sort-wrap .sort-dogs {
+  background-color: #0068b8;
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+.sort-dogs .sort-title {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.sort-dogs select {
+  height: 50px;
+  width: 50%;
+  color: white;
+  background-color: #0073ca;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.page .dogs-list {
+  /* border: 2px red solid; */
+  border: none;
+  display: flex;
+  color: white;
+}
+
+.dogs-list .first-column {
+  width: 50%;
+}
+
+.dogs-list img {
+  height: 500px;
+  width: 100%;
+}
+
+.dogs-list h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.dogs-list .second-column {
+  width: 50%;
+}
+
+.dogs-list div:nth-child(odd) {
+  background-color: #0068b8;
+  border: 1px #0068b8 solid;
+}
+
+.dogs-list div:nth-child(even) {
+  background-color: #0073ca;
+  border: 1px #0073ca solid;
+}
+
+
 @media screen and (max-width: 480px) {
   * {
     box-sizing: border-box;
@@ -64,7 +147,7 @@ nav .voice-setting-div {
     color: white;
     font-size: 15px;
     height: 55px;
-    background-color: #0183e6;
+    background-color: #0073ca;
   }
 
   nav h1 {
@@ -90,4 +173,87 @@ nav .voice-setting-div {
     height: 30px;
     width: 30px;
   }
+
+  .main-section {
+    display: flex;
+    background-color: #0183e6;
+  }
+  
+  .main-section img {
+    height: 250px;
+    padding: 30px;
+    width: 50%;
+    color: #0183e6;
+  }
+
+  .main-section .main-count {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+    font-size: 15px;
+    width: 50%;
+  }
+
+  .sort-wrap .sort-dogs {
+    background-color: #0068b8;
+    height: 50px;
+    width: 100%;
+    color: white;
+  }
+
+  .sort-dogs .sort-title {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+
+  .sort-dogs select {
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: #0073ca;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .page .dogs-list {
+    display: inline;
+    color: white;
+    width: 100%;
+  }
+
+  .page .dogs-list .first-column {
+    width: 50%;
+    /* border: 2px yellow solid; */
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    float: left;
+  }
+
+  .dogs-list img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .dogs-list h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  /* .page .dogs-list .first-column:nth-child(odd) {
+    background-color: #0183e6;
+    border: 2px green solid;
+  } */
+
+
+
+
+
 };
