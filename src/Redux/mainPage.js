@@ -13,22 +13,28 @@ export const dogsInfo = createSlice({
       Object.keys(action.payload.message).forEach((key, index) => {
         dogArray.push({
           id: index,
-          name: action.payload.message[key],
+          name:key,
+          species: action.payload.message[key],
+          // name: action.payload.message[key],
         //   total: action.payload.message.length,
         //   reserved: false,
         });
       });
       return dogArray;
     },
+    sort(state, action) {
+      return action.payload;
+    }
 
     },
 });
 
 export const dogActions = dogsInfo.actions;
 
+
 export const getDogs = () => async (dispatch) => {
   const fetchingData = async () => {
-    const response = await fetch('https://dog.ceo/api/breed/terrier/list/random/22');
+    const response = await fetch('https://dog.ceo/api/breeds/list/all/random/44');
     const data = await response.json();
     return data;
   };
@@ -41,3 +47,5 @@ export const getDogs = () => async (dispatch) => {
     console.log(error);
   }
 };
+
+
