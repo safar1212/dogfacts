@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dogfacts/static/css/main.f4802dec.css",
+    "main.js": "/dogfacts/static/js/main.f1bcf00d.js",
+    "static/media/main-pic.png": "/dogfacts/static/media/main-pic.d059e560baf297e866f2.png",
+    "static/media/dogs.png": "/dogfacts/static/media/dogs.faddee9c51c00b4d69ba.png",
+    "index.html": "/dogfacts/index.html",
+    "main.f4802dec.css.map": "/dogfacts/static/css/main.f4802dec.css.map",
+    "main.f1bcf00d.js.map": "/dogfacts/static/js/main.f1bcf00d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4802dec.css",
+    "static/js/main.f1bcf00d.js"
+  ]
+}
