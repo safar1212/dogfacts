@@ -1,35 +1,33 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect } from "react";
 import pic from "../images/main-pic.png";
 import dogPic from "../images/dogs.png";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux/es/exports";
 import { getDogs } from "../Redux/mainPage";
 import { dogActions } from "../Redux/mainPage";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getDogs());
   }, []);
 
-
-  const dog = useSelector((state) => state.dog );
+  const dog = useSelector((state) => state.dog);
   // console.log(dog);
 
   const Ascending = (order) => {
-    // console.log(order);
     let sorted;
 
-    if(order === 'z-a') {
-     sorted = [...dog].sort((a,b) => b.name.localeCompare(a.name));
-    } else if(order === 'a-z') {
-      sorted = [...dog].sort((a,b) => a.name.localeCompare(b.name)); 
+    if (order === "z-a") {
+      sorted = [...dog].sort((a, b) => b.name.localeCompare(a.name));
+    } else if (order === "a-z") {
+      sorted = [...dog].sort((a, b) => a.name.localeCompare(b.name));
     }
     // console.log(sorted);
     dispatch(dogActions.sort(sorted));
-  }
+  };
 
   return (
     <div className="page">
@@ -43,7 +41,12 @@ const HomePage = () => {
       <div className="sort-wrap">
         <div className="sort-dogs">
           <span className="sort-title">Sort By Order:</span>
-          <select className="sort" onChange={(e) => { Ascending(e.target.value) }}>
+          <select
+            className="sort"
+            onChange={(e) => {
+              Ascending(e.target.value);
+            }}
+          >
             <option value="sort">Sort</option>
             <option value="a-z">A to Z</option>
             <option value="z-a">Z to A</option>
@@ -51,13 +54,15 @@ const HomePage = () => {
         </div>
       </div>
       {dog.map((data) => (
-      <div key={data.id} className="dogs-list">
-        <div id={data.id} className="first-column">
-          <img src={dogPic} alt="dog"></img>
-          <h3>Dog's Breed</h3>
-          <h3>{data.name}</h3>
+        <div key={data.id} className="dogs-list">
+          <Link to={`/Dogs/${data.name}`}>
+            <div id={data.id} className="first-column">
+              <img id={data.id} src={dogPic} alt="dog"></img>
+              <h3 id={data.id}>Dog's Breed</h3>
+              <h3 id={data.id}>{data.name}</h3>
+            </div>
+          </Link>
         </div>
-      </div>
       ))}
     </div>
   );

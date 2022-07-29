@@ -97,7 +97,7 @@ nav .voice-setting-div {
 }
 
 .page .dogs-list .first-column {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   width: 50%;
   background-color: #0183e6;
   position: relative;
@@ -248,10 +248,19 @@ nav .voice-setting-div {
     font-size: 18px;
   }
 
-  /* .page .dogs-list .first-column:nth-child(odd) {
-    background-color: #0183e6;
-    border: 2px green solid;
-  } */
+.details-div {
+  border: 2px red solid;
+}
+
+.details-div img {
+  border: 2px green solid;
+  height: 250px;
+  width: 100%;
+}
+
+/* .page .dogs-list .first-column:nth-child(odd) {
+  background-color: aqua;
+} */
 
 
 

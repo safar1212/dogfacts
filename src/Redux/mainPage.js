@@ -1,6 +1,7 @@
 // import { createSlice } from "@reduxjs/toolkit/dist/createSlice";
 
 import { createSlice } from '@reduxjs/toolkit';
+import { at } from 'lodash';
 
 const initialState = [];
 
@@ -24,6 +25,20 @@ export const dogsInfo = createSlice({
     },
     sort(state, action) {
       return action.payload;
+    },
+
+    showDetail(state, action) {
+      // return [...state, action]
+      const speciesArray = [];
+      action.payload.message.forEach((key, index) => {
+        speciesArray.push({
+          id: index,
+          name:key,
+          // species: action.payload.message[key],
+        });
+      });
+      console.log("showDetail", speciesArray);
+      return speciesArray;
     }
 
     },
@@ -47,5 +62,8 @@ export const getDogs = () => async (dispatch) => {
     console.log(error);
   }
 };
+
+
+
 
 
