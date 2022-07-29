@@ -15,9 +15,6 @@ export const dogsInfo = createSlice({
           id: index,
           name: key,
           species: action.payload.message[key],
-          // name: action.payload.message[key],
-        //   total: action.payload.message.length,
-        //   reserved: false,
         });
       });
       return dogArray;
@@ -27,16 +24,13 @@ export const dogsInfo = createSlice({
     },
 
     showDetail(state, action) {
-      // return [...state, action]
       const speciesArray = [];
       action.payload.message.forEach((key, index) => {
         speciesArray.push({
           id: index,
           name: key,
-          // species: action.payload.message[key],
         });
       });
-      console.log('showDetail', speciesArray);
       return speciesArray;
     },
 
