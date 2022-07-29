@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
 }
 
 nav {
@@ -25,7 +25,7 @@ nav ul {
   justify-content: flex-start;
   text-decoration: none;
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 nav ul li a {
@@ -40,10 +40,9 @@ nav img {
 }
 
 nav .voice-setting-div {
- display: flex;
- gap: 8px;
+  display: flex;
+  gap: 8px;
 }
-
 
 .main-section {
   display: flex;
@@ -102,6 +101,20 @@ nav .voice-setting-div {
   float: left;
 }
 
+.dogs-list h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.details-div h3 {
+  padding-bottom: 10px;
+  background-color: #0068b8;
+  padding-left: 20px;
+}
+
 .page .dogs-list .first-column h3 {
   color: white;
 }
@@ -109,14 +122,6 @@ nav .voice-setting-div {
 .dogs-list img {
   height: 500px;
   width: 100%;
-}
-
-.dogs-list h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
-  font-size: 40px;
 }
 
 .details-div {
@@ -132,12 +137,6 @@ nav .voice-setting-div {
   width: 100%;
 }
 
-.details-div h3 {
- padding-bottom: 10px;
-  background-color: #0068b8;
-  padding-left: 20px;
-}
-
 .details-div h4 {
   padding-bottom: 10px;
   background-color: #0068b8;
@@ -148,19 +147,14 @@ nav .voice-setting-div {
   list-style: none;
 }
 
-
-
-
-
-
 @media screen and (max-width: 480px) {
   * {
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
   }
 
   nav {
-    padding: 0px;
+    padding: 0;
     display: flex;
     align-items: center;
     align-content: center;
@@ -178,7 +172,7 @@ nav .voice-setting-div {
   nav h1 {
     font-size: 25px;
   }
-  
+
   nav ul {
     display: flex;
     align-items: center;
@@ -186,14 +180,14 @@ nav .voice-setting-div {
     justify-content: flex-start;
     text-decoration: none;
     list-style: none;
-    padding: 0px;
+    padding: 0;
   }
-  
+
   nav ul li a {
     text-decoration: none;
     color: white;
   }
-  
+
   nav img {
     height: 30px;
     width: 30px;
@@ -203,7 +197,7 @@ nav .voice-setting-div {
     display: flex;
     background-color: #0183e6;
   }
-  
+
   .main-section img {
     height: 250px;
     padding: 30px;
@@ -256,6 +250,20 @@ nav .voice-setting-div {
     float: left;
   }
 
+  .dogs-list h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .details-div h3 {
+    padding-bottom: 10px;
+    background-color: #0068b8;
+    padding-left: 20px;
+  }
+
   .page .dogs-list .first-column h3 {
     color: white;
   }
@@ -265,47 +273,26 @@ nav .voice-setting-div {
     width: 100%;
   }
 
-  .dogs-list h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-    font-size: 18px;
+  .details-div {
+    font-size: 25px;
+    padding-bottom: 50px;
+    background-color: #0183e6;
+    color: white;
   }
 
-.details-div {
-  font-size: 25px;
-  padding-bottom: 50px;
-  background-color: #0183e6;
-  color: white;
+  .details-div img {
+    background-color: #0183e6;
+    height: 250px;
+    width: 100%;
+  }
+
+  .details-div h4 {
+    padding-bottom: 10px;
+    background-color: #0068b8;
+    padding-left: 20px;
+  }
+
+  .details-div ul {
+    list-style: none;
+  }
 }
-
-.details-div img {
-  background-color: #0183e6;
-  height: 250px;
-  width: 100%;
-}
-
-.details-div h3 {
- padding-bottom: 10px;
-  background-color: #0068b8;
-  padding-left: 20px;
-}
-
-.details-div h4 {
-  padding-bottom: 10px;
-  background-color: #0068b8;
-  padding-left: 20px;
-}
-
-.details-div ul {
-  list-style: none;
-}
-
-
-
-
-
-
-
-};

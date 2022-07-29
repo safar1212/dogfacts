@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 import HomePage from '../Components/HomePage';
 
-
 describe('Details test', () => {
   it('Details render correctly', () => {
     const DetailsPage = renderer.create(

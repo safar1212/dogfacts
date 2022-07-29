@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
-import pic from "../images/main-pic.png";
-import dogPic from "../images/dogs.png";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { getDogs } from "../Redux/mainPage";
-import { dogActions } from "../Redux/mainPage";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import pic from '../images/main-pic.png';
+import dogPic from '../images/dogs.png';
+
+import { getDogs, dogActions } from '../Redux/mainPage';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -19,9 +18,9 @@ const HomePage = () => {
   const Ascending = (order) => {
     let sorted;
 
-    if (order === "z-a") {
+    if (order === 'z-a') {
       sorted = [...dog].sort((a, b) => b.name.localeCompare(a.name));
-    } else if (order === "a-z") {
+    } else if (order === 'a-z') {
       sorted = [...dog].sort((a, b) => a.name.localeCompare(b.name));
     }
     dispatch(dogActions.sort(sorted));
@@ -30,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="page">
       <div className="main-section">
-        <img src={pic} alt="dog-pic"></img>
+        <img src={pic} alt="dog-pic" />
         <div className="main-count">
           <h2>Total Breeds</h2>
           <h2>{dog.length}</h2>
@@ -55,8 +54,8 @@ const HomePage = () => {
         <div key={data.id} className="dogs-list">
           <Link to={`/Dogs/${data.name}`}>
             <div id={data.id} className="first-column">
-              <img id={data.id} src={dogPic} alt="dog"></img>
-              <h3 id={data.id}>Dog's Breed</h3>
+              <img id={data.id} src={dogPic} alt="dog" />
+              <h3 id={data.id}>Dog&apos;s Breed</h3>
               <h3 id={data.id}>{data.name}</h3>
             </div>
           </Link>

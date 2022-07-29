@@ -6,7 +6,6 @@ import NavBar from './Components/Navbar';
 import Details from './Components/Details';
 
 function App() {
-
   return (
     <Router>
       <NavBar />

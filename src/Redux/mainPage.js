@@ -2,7 +2,6 @@
 
 import { createSlice } from '@reduxjs/toolkit';
 
-
 const initialState = [];
 
 export const dogsInfo = createSlice({
@@ -14,7 +13,7 @@ export const dogsInfo = createSlice({
       Object.keys(action.payload.message).forEach((key, index) => {
         dogArray.push({
           id: index,
-          name:key,
+          name: key,
           species: action.payload.message[key],
           // name: action.payload.message[key],
         //   total: action.payload.message.length,
@@ -33,19 +32,18 @@ export const dogsInfo = createSlice({
       action.payload.message.forEach((key, index) => {
         speciesArray.push({
           id: index,
-          name:key,
+          name: key,
           // species: action.payload.message[key],
         });
       });
-      console.log("showDetail", speciesArray);
+      console.log('showDetail', speciesArray);
       return speciesArray;
-    }
-
     },
+
+  },
 });
 
 export const dogActions = dogsInfo.actions;
-
 
 export const getDogs = () => async (dispatch) => {
   const fetchingData = async () => {
@@ -62,8 +60,3 @@ export const getDogs = () => async (dispatch) => {
     console.log(error);
   }
 };
-
-
-
-
-
