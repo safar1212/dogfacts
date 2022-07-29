@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details test Details render correctly 1`] = `
+<div>
+  <div
+    className="details-div"
+  >
+    <img
+      alt="dog"
+      src="dogs.png"
+    />
+    <div
+      className="species"
+    >
+      <div>
+        <h3>
+          BREED:
+        </h3>
+      </div>
+      <div>
+        <h4>
+          SUB BREED NAMES
+        </h4>
+      </div>
+      <div
+        className="sub-breed-list"
+      >
+        <div>
+          <h5>
+            No sub breeds
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
