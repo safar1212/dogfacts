@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details test Details render correctly 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="main-section"
+  >
+    <img
+      alt="dog-pic"
+      src="main-pic.png"
+    />
+    <div
+      className="main-count"
+    >
+      <h2>
+        Total Breeds
+      </h2>
+      <h2>
+        0
+      </h2>
+    </div>
+  </div>
+  <div
+    className="sort-wrap"
+  >
+    <div
+      className="sort-dogs"
+    >
+      <span
+        className="sort-title"
+      >
+        Sort By Order:
+      </span>
+      <select
+        className="sort"
+        onChange={[Function]}
+      >
+        <option
+          value="sort"
+        >
+          Sort
+        </option>
+        <option
+          value="a-z"
+        >
+          A to Z
+        </option>
+        <option
+          value="z-a"
+        >
+          Z to A
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;

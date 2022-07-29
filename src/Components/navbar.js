@@ -1,8 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import backArrow from '../images/arrow_back.svg';
-// import settings from '../images/settings.svg';
-// import voice from '../images/keyboard_voice.svg';
 import backArrow from '../images/arrow2.png';
 import settings from '../images/settings.png';
 import voice from '../images/mic.png';

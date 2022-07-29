@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Builds the snapchot of the navbar component safely 1`] = `
+<nav>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="arrow"
+          src="arrow2.png"
+        />
+      </a>
+    </li>
+  </ul>
+  <div>
+    <h1>
+      Dog Breeds
+    </h1>
+  </div>
+  <div
+    className="voice-setting-div"
+  >
+    <img
+      alt="voicerecorder"
+      src="mic.png"
+    />
+    <img
+      alt="settings"
+      src="settings.png"
+    />
+  </div>
+</nav>
+`;

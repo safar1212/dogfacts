@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
-// import pic from "../images/main-pic.png";
 import dogPic from "../images/dogs.png";
 import { useParams } from "react-router-dom";
-// import axios from "react-axios";
 import { useDispatch } from "react-redux";
 import { dogActions } from "../Redux/mainPage";
-// import { fetchDogsDetails } from "../Redux/mainPage";
+
 import { useSelector } from "react-redux";
-// import { useDispatch } from "react-redux/es/exports";
-// import { getDogs } from "../Redux/mainPage";
-// import { dogActions } from "../Redux/mainPage";
 
 const Details = () => {
   const dispatch = useDispatch();
@@ -17,12 +12,10 @@ const Details = () => {
   const dog = useSelector((state) => state.dog);
   console.log("dog state", dog);
 
-    // const {id, name, species} = messageName;
-
   const { messageName } = useParams();
   
-  const capital = messageName.toLocaleUpperCase();
-  console.log(capital);
+  // const capital = messageName.toLocaleUpperCase();
+  // console.log(capital);
 
   const fetchDogsDetails = () => async (dispatch) => {
     const fetchingData = async () => {
@@ -56,7 +49,7 @@ const Details = () => {
         <img src={dogPic}></img>
         <div id={dog.id} className="species">
           <div>
-            <h3>BREED:{capital}</h3>
+            <h3>BREED:{messageName}</h3>
           </div>
           <div key={dog.id}>
             <h4>SUB BREED NAMES</h4>

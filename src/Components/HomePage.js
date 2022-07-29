@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import pic from "../images/main-pic.png";
 import dogPic from "../images/dogs.png";
 import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux/es/exports";
+import { useDispatch } from "react-redux";
 import { getDogs } from "../Redux/mainPage";
 import { dogActions } from "../Redux/mainPage";
 import { Link } from "react-router-dom";
@@ -15,7 +15,6 @@ const HomePage = () => {
   }, []);
 
   const dog = useSelector((state) => state.dog);
-  // console.log(dog);
 
   const Ascending = (order) => {
     let sorted;
@@ -25,7 +24,6 @@ const HomePage = () => {
     } else if (order === "a-z") {
       sorted = [...dog].sort((a, b) => a.name.localeCompare(b.name));
     }
-    // console.log(sorted);
     dispatch(dogActions.sort(sorted));
   };
 
