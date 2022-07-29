@@ -47,7 +47,7 @@ const Details = () => {
   }, []);
 
   const listItem = dog.map(dog=>{
-    return <li key={dog.id}>{dog.name}</li>;
+    return <li key={dog.id}>{dog.id + 1}{':'}{' '}{dog.name}</li>;
   });
 
   return (
@@ -56,13 +56,17 @@ const Details = () => {
         <img src={dogPic}></img>
         <div id={dog.id} className="species">
           <div>
-            <h2>{capital}</h2>
+            <h3>BREED:{capital}</h3>
           </div>
           <div key={dog.id}>
-            <h3>SUB BREED LIST</h3>
+            <h4>SUB BREED NAMES</h4>
           </div>
           <div className="sub-breed-list">
-            <ul>{listItem}</ul>
+            {Object.keys(dog).length === 0 ? (
+              <div><h5>No sub breeds</h5></div>
+            ) : (
+              <ul>{listItem}</ul>
+            )}
           </div>
         </div>
       </div>
