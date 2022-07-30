@@ -34,17 +34,6 @@ export const dogsInfo = createSlice({
       return speciesArray;
     },
 
-    searchDogs: (state, action) => action.payload
-    // const { payload: { name } } = action;
-    // const newState = dogs.filter((dog) => {
-    //   if (dog.name === name) {
-    //     return dog;
-    //   }
-    //   return null;
-    // });
-    // return { ...state, data: [...newState] };
-    ,
-
   },
 });
 
@@ -59,7 +48,6 @@ export const getDogs = () => async (dispatch) => {
 
   try {
     const testdata = await fetchingData();
-    // console.log(testdata);
     dispatch(dogActions.dogs(testdata));
   } catch (error) {
     console.log(error);

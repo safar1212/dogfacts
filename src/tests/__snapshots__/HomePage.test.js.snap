@@ -26,6 +26,18 @@ exports[`Details test Details render correctly 1`] = `
     className="sort-wrap"
   >
     <div
+      className="input-div"
+    >
+      <span>
+        Search for breed:
+      </span>
+      <input
+        onChange={[Function]}
+        placeholder="breed..."
+        type="text"
+      />
+    </div>
+    <div
       className="sort-dogs"
     >
       <span
