@@ -6,14 +6,19 @@
 
 ## Live Version  ✔️
 
-<!-- [Live Demo Link](https://stupendous-dieffenbachia-47916f.netlify.app/) -->
+[Live Link](https://safar1212.github.io/)
 
 
 
- ## ScreenShot
+ ## ScreenShots
  
-<!-- ![2022-07-16_17-47-56](https://user-images.githubusercontent.com/78845635/179355540-641c6e4d-3c01-4e3c-9e00-89e22f0b4d7f.jpg) -->
 
+![2022-07-30_10-09-38](https://user-images.githubusercontent.com/78845635/181875757-47fffb53-f7a6-4282-8788-db370252f4d6.jpg)
+
+
+
+
+![2022-07-30_10-10-07](https://user-images.githubusercontent.com/78845635/181875755-c7d686cd-4ff5-4b55-b9f8-1791e9d8217f.jpg)
 
                               
 ## Built With ✔️
