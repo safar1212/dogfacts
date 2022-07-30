@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 import axios from 'axios';
 import store from '../redux/configureStore';
 import HomePage from '../Components/HomePage';
-// import { dogActions, getDogs } from '../Redux/mainPage';
 
 jest.mock('axios');
 
