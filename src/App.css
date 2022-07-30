@@ -67,6 +67,27 @@ nav .voice-setting-div {
   font-size: 40px;
 }
 
+.input-div {
+  height: 50px;
+  background-color: #0068b8;
+}
+
+.input-div span {
+  font-size: 28px;
+  line-height: 0%;
+  color: white;
+}
+
+.input-div input {
+  border-radius: 5px;
+  padding-left: 10px;
+  border: white;
+  font-size: 22px;
+  width: 50%;
+  height: 50px;
+  margin-left: 10px;
+}
+
 .sort-wrap .sort-dogs {
   background-color: #0068b8;
   height: 50px;
@@ -96,21 +117,39 @@ nav .voice-setting-div {
 }
 
 .page .dogs-list .first-column {
-  /* display: flex; */
   width: 100%;
-
-  /* background-color: #0183e6; */
   position: relative;
   float: left;
 }
 
+.dogs-list img {
+  height: 500px;
+  width: 100%;
+}
+
+.details-div img {
+  background-color: #0183e6;
+  height: 600px;
+  width: 100%;
+}
+
+.page .dogs-list .first-column img {
+  background-image: url(./images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position-x: right;
+  margin-top: 13px;
+}
+
 .page .dogs-list:nth-child(odd) {
   display: flex;
+  justify-content: center;
   float: right;
 }
 
 .page .dogs-list:nth-child(even) {
   display: flex;
+  justify-content: center;
   float: left;
 }
 
@@ -146,22 +185,11 @@ nav .voice-setting-div {
   color: white;
 }
 
-.dogs-list img {
-  height: 500px;
-  width: 100%;
-}
-
 .details-div {
   font-size: 25px;
   padding-bottom: 50px;
   background-color: #0183e6;
   color: white;
-}
-
-.details-div img {
-  background-color: #0183e6;
-  height: 600px;
-  width: 100%;
 }
 
 .details-div h4 {

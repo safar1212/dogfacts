@@ -3,8 +3,9 @@ import { useDispatch } from 'react-redux';
 import { dogActions } from '../Redux/mainPage';
 
 /* eslint-disable react/prop-types */
-const Filter = ({ dog }) => {
+const Filter = ({ handleChange, dog }) => {
   const dispatch = useDispatch();
+
   const Ascending = (order) => {
     let sorted;
     if (order === 'z-a') {
@@ -14,20 +15,27 @@ const Filter = ({ dog }) => {
     }
     dispatch(dogActions.sort(sorted));
   };
+
   return (
-    <div className="sort-dogs">
-      <span className="sort-title">Sort By Order:</span>
-      <select
-        className="sort"
-        onChange={(e) => {
-          Ascending(e.target.value);
-        }}
-      >
-        <option value="sort">Sort</option>
-        <option value="a-z">A to Z</option>
-        <option value="z-a">Z to A</option>
-      </select>
-    </div>
+    <>
+      <div className="input-div">
+        <span>Search for breed:</span>
+        <input type="text" placeholder="breed..." onChange={(e) => handleChange(e.target.value)} />
+      </div>
+      <div className="sort-dogs">
+        <span className="sort-title">Sort By Order:</span>
+        <select
+          className="sort"
+          onChange={(e) => {
+            Ascending(e.target.value);
+          }}
+        >
+          <option value="sort">Sort</option>
+          <option value="a-z">A to Z</option>
+          <option value="z-a">Z to A</option>
+        </select>
+      </div>
+    </>
   );
 };
 export default Filter;

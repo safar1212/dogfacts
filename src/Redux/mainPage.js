@@ -34,6 +34,17 @@ export const dogsInfo = createSlice({
       return speciesArray;
     },
 
+    searchDogs: (state, action) => action.payload
+    // const { payload: { name } } = action;
+    // const newState = dogs.filter((dog) => {
+    //   if (dog.name === name) {
+    //     return dog;
+    //   }
+    //   return null;
+    // });
+    // return { ...state, data: [...newState] };
+    ,
+
   },
 });
 
