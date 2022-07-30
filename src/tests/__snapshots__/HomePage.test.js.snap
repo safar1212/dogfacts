@@ -14,7 +14,9 @@ exports[`Details test Details render correctly 1`] = `
     <div
       className="main-count"
     >
-      <h2>
+      <h2
+        data-testid="user-list"
+      >
         Total Breeds
       </h2>
       <h2>

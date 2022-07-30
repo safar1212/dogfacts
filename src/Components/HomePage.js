@@ -24,7 +24,7 @@ const HomePage = () => {
       <div className="main-section">
         <img src={pic} alt="dog-pic" />
         <div className="main-count">
-          <h2>Total Breeds</h2>
+          <h2 data-testid="user-list">Total Breeds</h2>
           <h2>{dog.length}</h2>
         </div>
       </div>
