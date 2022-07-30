@@ -268,6 +268,17 @@ nav .voice-setting-div {
     color: white;
   }
 
+  .dogs-list img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .details-div img {
+    background-color: #0183e6;
+    height: 250px;
+    width: 100%;
+  }
+
   .page .dogs-list .first-column img {
     background-image: url(./images/arrow.png);
     background-repeat: no-repeat;
@@ -276,22 +287,11 @@ nav .voice-setting-div {
     margin-top: 13px;
   }
 
-  .dogs-list img {
-    height: 250px;
-    width: 100%;
-  }
-
   .details-div {
     font-size: 25px;
     padding-bottom: 50px;
     background-color: #0183e6;
     color: white;
-  }
-
-  .details-div img {
-    background-color: #0183e6;
-    height: 250px;
-    width: 100%;
   }
 
   .details-div h4 {
