@@ -6,7 +6,7 @@
 
 ## Live Version  ✔️
 
-<!-- [Live Demo Link](https://stupendous-dieffenbachia-47916f.netlify.app/) -->
+[Live Demo Link](https://safar1212.github.io/)
 
 
 
