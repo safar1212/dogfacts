@@ -89,16 +89,42 @@ nav .voice-setting-div {
 }
 
 .page .dogs-list {
-  display: inline;
+  /* display: inline; */
+  display: flex;
   color: white;
-  width: 100%;
+  width: 50%;
 }
 
 .page .dogs-list .first-column {
-  width: 50%;
-  background-color: #0183e6;
+  /* display: flex; */
+  width: 100%;
+  /* background-color: #0183e6; */
   position: relative;
   float: left;
+}
+
+.page .dogs-list:nth-child(odd) {
+  display: flex;
+  float: right;
+}
+
+.page .dogs-list:nth-child(even) {
+  display: flex;
+  float: left;
+}
+
+.page .dogs-list:nth-child(4n-1),
+.page .dogs-list:nth-child(4n-2),
+.page .dogs-list:nth-child(3),
+.page .dogs-list:nth-child(8n+7),
+.page .dogs-list:nth-child(8n+11) {
+  background-color: #0073ca;
+}
+
+.page .dogs-list:nth-child(4n),
+.page .dogs-list:nth-child(4n+1),
+.page .dogs-list:nth-child(4n+4){
+  background-color: #0183e6;
 }
 
 .dogs-list h3 {
@@ -236,18 +262,6 @@ nav .voice-setting-div {
     background-color: #0073ca;
     font-size: 20px;
     margin-left: 10px;
-  }
-
-  .page .dogs-list {
-    display: inline;
-    color: white;
-    width: 100%;
-  }
-
-  .page .dogs-list .first-column {
-    width: 50%;
-    position: relative;
-    float: left;
   }
 
   .dogs-list h3 {
