@@ -30,12 +30,13 @@
 - React-Redux🔥
 - redux-thunk🔥
 - react Router Dom🔥
--DDT testing.😄
+- DDT testing.😄
 
 ## Functionalites 😄
 
 - You can check list of dogs. ✔️
 - You can search for your dog.✔️
+- You can sort out dogs.✔️
 - You can learn almost about any sort of dogs ✔️
 
 
