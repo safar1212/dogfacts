@@ -30,7 +30,8 @@
 - React-Redux🔥
 - redux-thunk🔥
 - react Router Dom🔥
-- DDT testing.😄
+- DDT testing.😋
+- Integrating testing😄
 
 ## Functionalites 😄
 
