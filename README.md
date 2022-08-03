@@ -29,6 +29,7 @@
 - Redux🔥
 - React-Redux🔥
 - redux-thunk🔥
+- API
 - react Router Dom🔥
 - DDT testing.😋
 - Integrating testing😄
